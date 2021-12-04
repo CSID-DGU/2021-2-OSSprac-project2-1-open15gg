@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>수업만족도 설문조사</title>
+</head>
+<body>
+<h1>수업만족도 설문조사</h1>
+<form action="/submit" method="post">
+    이름: <input type="text" name="uname" value="" placeholder="이름"><br>
+    학과: <input type="text" name="umajor" value="" placeholder="학과"><br>
+    학번: <input type="text" name="uid" value="" placeholder="학번"><br>
+    수업이 유익했다
+    <input type="radio" name="yn" value="y" checked>yes
+    <input type="radio" name="yn" value="n">no
+    <br>
+    받고 싶은 학점
+    <select name="score" id="">
+        <option value="A+">A+</option>
+        <option value="A">A</option>
+    </select>
+    <br>
+    수업 소감
+    <br>
+    <textarea name="opinion" id="" cols="30" rows="10"></textarea>
+    <br>
+    <input type="submit" value="제출">
+</form>
+</body>
+</html>
