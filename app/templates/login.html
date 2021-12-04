@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <h1>OSSP 계정 로그인</h1>
+  {% if error != None %}
+  <h2>{{error}}</h2>
+  {% endif %}
+
+  <body>
+    <form action="/login" method="post">
+      <dl>
+        <dt>ID :</dt>
+        <dd>
+          <input type="text" name="id" />
+        </dd>
+        <dt>PW :</dt>
+        <dd>
+          <input type="password" name="pw" />
+        </dd>
+      </dl>
+      <p><input type="submit" value="Login" /></p>
+    </form>
+  </body>
+</html>
