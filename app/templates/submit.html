@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+  <h1>제출 결과</h1>
+
+  <body>
+    {% for key, value in forms.items() %}
+    <p>{{ key }} : {{ value }}</p>
+    {% endfor %}
+    <input type="submit" value="Log out" onclick="location.href='/'">
+  </body>
+
+</html>
